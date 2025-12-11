@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>GEOG 464 - Lab 7</title>
+        
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- link to leaflet styles -->
+		<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+		<!-- link to leaflet scripts -->
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+
+		<!--you can also place internal styles here; you would place these within <style> tags-->
+		
+    </head>
+
+    <body>
+        <!--put your initial page content here-->
+		<div id="div1">
+			<p> Robin Corbridge Lab 7<br><br>
+				Q2. The styleAll() function creates a styles object that is used to style all features on the map.
+				The style variable contains default style properties and we have included style modifications for 
+				these different properties. The condiitonal statement here then check if a feature is a point and
+				then sets specific style critera for point features. The function then returns changes made to the 
+				style crtiera which can then be accessed by Leaflet. <br><br>
+
+				Q4. The feature is the GEOJSON object, and the layer is what Leaflet is displaying using that GEOJSON
+				object. <br><br>
+
+				Q5. "layer.options.fill" only refers to and modifies the symbology of the feature. While "layer.getLatLng()"
+				is the actual spatial information of the feature, literally describe where it is. <br><br>
+
+				Q6. Changing the radius to 80 make the circles enormous, making them pretty much useless. Setting the fill
+				to false removed all fill colour from the cicrlces.
+			</p>
+		</div>
+		
+		<div id="mapdiv">
+		</div>
+		
+        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+
+		<!--put your external script links here-->
+        <script type="text/javascript" src="js/main.js"></script>
+		
+		<!-- Map selection dropdown -->
+		<select class="li-nav" name="mapdropdown" id="mapdropdown" >
+		<option value="map0" selected="selected" disabled>Load a map</option>
+			<option value='mapa'>Map A</option>
+			<option value='mapb'>Map B</option>
+		</select>
+    
+	</body>
+
+
+</html>
